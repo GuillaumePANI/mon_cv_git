@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="animate.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="bootstrap-notify.js"></script>
+    <script src="js_morpion.js"></script>
+    <style>
+        body, html {
+            margin: auto;
+            height: 100%;
+            width: 100%;
+        }
+
+        footer {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            padding: 1rem;
+            background-color: #efefef;
+            text-align: center;
+        }
+
+        .middle {
+            display: block;
+            height: 30%;
+            width: 30%;
+            margin: auto;
+            margin-top: 20%;
+        }
+
+        .table-bordered td {
+            border: 3px solid black;
+            height : 30%;
+            width : 30%
+        }
+        .table{
+            margin : 0 auto;
+        }
+
+        td, tr {
+            box-sizing: content-box;
+            width: 30%;
+            height: 30%;
+            margin: auto;
+            text-align: center;
+            font-size: xx-large;
+        }
+
+        [data-notify="progressbar"] {
+            margin-bottom: 0px;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+            height: 5px;
+        }
+
+        td.empty:hover {
+            background-color: darkslategrey;
+            opacity: .2;
+        }
+
+        td.filled:hover {
+            background-color: lightcoral;
+        }
+
+        .anim {
+            display: none;
+            display: none;
+            text-align: center;
+            height: 5%;
+        }
+        .top{
+            height : 10%;
+        }
+    </style>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <div class="top">
+        <h3 class="anim">Morpion engagé ! Au joueur 1 de jouer !</h3>
+    </div>>
+    <div class="middle">
+        <table class="table table-bordered">
+
+            <tbody>
+                <tr>
+
+                    <td class="empty" id="td00" onclick="replaceCellContent('td00')">&nbsp</td>
+                    <td class="empty" id="td01" onclick="replaceCellContent('td01')">&nbsp</td>
+                    <td class="empty" id="td02" onclick="replaceCellContent('td02')">&nbsp</td>
+                </tr>
+                <tr>
+
+                    <td class="empty" id="td10" onclick="replaceCellContent('td10')">&nbsp</td>
+                    <td class="empty" id="td11" onclick="replaceCellContent('td11')">&nbsp</td>
+                    <td class="empty" id="td12" onclick="replaceCellContent('td12')">&nbsp</td>
+                </tr>
+                <tr>
+                    <td class="empty" id="td20" onclick="replaceCellContent('td20')">&nbsp</td>
+                    <td class="empty" id="td21" onclick="replaceCellContent('td21')">&nbsp</td>
+                    <td class="empty" id="td22" onclick="replaceCellContent('td22')">&nbsp</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <center>
+        <button onclick="clearBoard()">Rejouer</button>
+    </center>
+
+
+
+    <footer><a href="Index.html">CV</a> <a href="morpion.html"> Morpion</a></footer>
+
+</body>
+</html>

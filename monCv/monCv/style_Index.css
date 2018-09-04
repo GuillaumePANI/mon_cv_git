@@ -1,0 +1,98 @@
+﻿body, html {
+    background-color: #c0deed;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.entete {
+    background-color: #0084b4;
+    text-align: center;
+}
+
+.text {
+    color: #303030;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 10px;
+    left: 5%;
+    z-index: 10;
+    padding-top: 20px;
+    color: black;
+    text-align: justify;
+}
+
+.carousel_img {
+    opacity: 0.4;
+    height: 100%;
+    width: 100%;
+}
+
+#carouselExampleIndicators {
+    height: 300px;
+}
+
+.carousel-indicators {
+    margin-bottom: -15px;
+}
+
+.carousel-control-prev {
+    margin-left: -5%;
+}
+
+.carousel-control-next {
+    margin-right: -5%;
+}
+
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+    opacity: 1;
+}
+
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+    opacity: 1;
+}
+
+ol.carousel-indicators li.active {
+    background: dimgrey;
+}
+
+ol.carousel-indicators li {
+    background: darkgrey;
+}
+
+.principale {
+    height: 100%;
+}
+
+#nodeliste {
+    width: 100%;
+    background-color: lightcoral;
+}
+
+.el {
+    height: auto;
+    width: 80%;
+    border-color: darkslategrey;
+    border-width: 1px;
+    border-style: solid;
+    text-align: center;
+    display: none;
+}
+
+footer {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #efefef;
+    text-align: center;
+}
